@@ -1,3 +1,37 @@
+:root {
+  /* Background Colors */
+  --clr-background: hsl(165, 8%, 97%);
+
+  --clr-feed-item: hsl(0, 0%, 100%);
+
+  --clr-picture-background: hsl(65, 50%, 52%);
+
+  /* Text Colors */
+  --clr-txt-navbar: hsl(160, 1%, 59%);
+  --clr-txt-navbar-chosen: hsl(170, 61%, 45%);
+
+  --clr-txt-username: hsl(163, 8%, 17%);
+  --clr-txt-shop-name: hsl(210, 90%, 40%);
+  --clr-txt-post-text: hsl(0, 0%, 0%);
+
+  --clr-txt-counters: hsl(168, 2%, 46%);
+
+  --clr-txt-like-comment: hsl(160, 4%, 29%);
+  --clr-txt-liked: hsl(210, 90%, 40%);
+
+  /* Font Families */
+  --ff-main: "DM Sans", sans-serif;
+  --ff-navbar: "Poppins", sans-serif;
+
+  /* Font Weights */
+  --fw-main: 400;
+  --fw-secondary: 500;
+
+  /* Font Sizes */
+  --fs-primary: 0.875rem;
+  --fs-big: 1rem;
+}
+
 *,
 *::before,
 *::after {
