@@ -14,12 +14,13 @@ function App() {
 
   const fetchFeedItems = async () => {
     try {
-      const response = await axios.get(
-        `https://backend.tedooo.com/hw/feed.json?skip=${skip}`
-      );
-      setFeedItems((prev) => [...prev, ...response.data.items]);
-      setHasMore(response.data.hasMore);
-      setSkip((prev) => prev + 6);
+      const response = await axios.get(`/feed?skip=${skip}`);
+
+      if (response.data && Array.isArray(response.data.data)) {
+        setFeedItems((prev) => [...prev, ...response.data.data]);
+        setHasMore(response.data.hasMore);
+        setSkip((prev) => prev + 6);
+      }
     } catch (error) {
       console.error("Failed to fetch feed items:", error);
     }
@@ -39,8 +40,8 @@ function App() {
         loader={<Loader />}
       >
         <div className="feed">
-          {feedItems.map((item) => (
-            <FeedItem key={item.id} item={item} />
+          {feedItems.map((item, index) => (
+            <FeedItem key={`${item.id}-${index}`} item={item} />
           ))}
         </div>
       </InfiniteScroll>
