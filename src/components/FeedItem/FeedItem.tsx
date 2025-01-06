@@ -23,7 +23,7 @@ const FeedItem: React.FC<FeedItemProps> = ({ item }) => {
           <img key={index} src={image} alt="Post Image" />
         ))}
       </div>
-      <CountersSection />
+      <CountersSection likes={item.likes} comments={item.comments} />
       <hr />
       <ActionsSection />
     </div>

@@ -1,9 +1,20 @@
 import "./ActionsSection.css";
+import likesIcon from "../../../assets/like.svg";
+import commentsIcon from "../../../assets/comment.svg";
 
-interface ActionsSectionProps {}
-
-const ActionsSection: React.FC<ActionsSectionProps> = ({}) => {
-  return <div></div>;
+const ActionsSection: React.FC = () => {
+  return (
+    <div className="actions-section-main">
+      <div className="like-action">
+        <img src={likesIcon} alt="Like icon" />
+        <span>Like</span>
+      </div>
+      <div className="comment-action">
+        <img src={commentsIcon} alt="Comment icon" />
+        <span>Like</span>
+      </div>
+    </div>
+  );
 };
 
 export default ActionsSection;
