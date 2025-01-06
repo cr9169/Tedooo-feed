@@ -15,6 +15,7 @@ const FeedItem: React.FC<FeedItemProps> = ({ item }) => {
         username={item.username}
         avatar={item.avatar}
         shopName={item.shopName}
+        date={item.date}
       />
       <p>{item.text}</p>
       <div className="post-images">
@@ -23,6 +24,7 @@ const FeedItem: React.FC<FeedItemProps> = ({ item }) => {
         ))}
       </div>
       <CountersSection />
+      <hr />
       <ActionsSection />
     </div>
   );
