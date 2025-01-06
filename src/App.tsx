@@ -1,10 +1,11 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import InfiniteScroll from "react-infinite-scroll-component";
-import FeedItem from "./components/FeedItem/FeedItem";
 import axios from "axios";
+import InfiniteScroll from "react-infinite-scroll-component";
 import IFeedItem from "./interface";
+import FeedItem from "./components/FeedItem/FeedItem";
 import Navbar from "./components/Navbar/Navbar";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const [feedItems, setFeedItems] = useState<IFeedItem[]>([]);
@@ -35,8 +36,7 @@ function App() {
         dataLength={feedItems.length}
         next={fetchFeedItems}
         hasMore={hasMore}
-        loader={<p>Loading...</p>}
-        endMessage={<p>No more items to load.</p>}
+        loader={<Loader />}
       >
         <div className="feed">
           {feedItems.map((item) => (
