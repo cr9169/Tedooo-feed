@@ -76,3 +76,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+.infinite-scroll-component {
+  overflow: unset !important;
+}
