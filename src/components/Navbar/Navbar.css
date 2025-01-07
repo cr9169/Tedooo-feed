@@ -23,7 +23,7 @@
   gap: 1rem;
 }
 
-.navbar-content img {
+.navbar-content > div > img {
   width: 2.5rem;
   aspect-ratio: 1/1;
 }
