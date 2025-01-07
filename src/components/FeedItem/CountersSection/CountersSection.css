@@ -1,0 +1,22 @@
+.counters-section-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  color: var(--clr-txt-counters);
+  font: var(--fw-main) var(--fs-primary);
+}
+
+.likes-amount-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.likes-amount-section > img {
+  width: 1.125rem;
+  aspect-ratio: 1;
+}
