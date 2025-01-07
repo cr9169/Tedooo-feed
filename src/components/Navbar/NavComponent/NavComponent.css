@@ -3,7 +3,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: var(--clr-item-background);
-  padding: 8px 0;
+  padding-inline: 0.5rem;
 }
 
 .nav-item {
@@ -15,7 +15,7 @@
 }
 
 .nav-item span {
-  margin-top: 4px;
+  margin-top: 0.25rem;
   color: var(--clr-txt-navbar);
 }
 
@@ -24,8 +24,8 @@
 }
 
 .nav-icon {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  aspect-ratio: 1;
   filter: invert(65%) sepia(7%) saturate(95%) hue-rotate(314deg) brightness(89%)
     contrast(89%);
 }
@@ -36,11 +36,11 @@
 }
 
 .active-indicator {
+  height: 0.125rem;
   position: absolute;
-  bottom: -8px;
+  bottom: -0.5rem;
   left: 0;
   right: 0;
-  height: 2px;
-  background-color: hsl(170, 61%, 45%);
-  border-radius: 2px;
+  background-color: var(--clr-txt-navbar-chosen);
+  border-radius: 0.125rem;
 }
