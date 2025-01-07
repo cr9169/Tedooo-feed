@@ -51,10 +51,12 @@ const UserDetails: React.FC<UserDetailsProps> = ({
   return (
     <div className="user-details-main-section">
       <img src={avatar} alt="Avatar" />
-      <span className="details-username">{username}</span>
-      <div>
-        <span className="details-shop-name">{shopName}</span>
-        <span className="details-time-elapsed">{timeElapsed}</span>
+      <div className="user-details">
+        <span className="details-username">{username}</span>
+        <div className="details-subinfo">
+          <span className="details-shop-name">{shopName}</span>
+          <span className="details-time-elapsed"> · {timeElapsed}</span>
+        </div>
       </div>
     </div>
   );

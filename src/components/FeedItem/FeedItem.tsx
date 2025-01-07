@@ -1,7 +1,7 @@
+import "./FeedItem.css";
 import IFeedItem from "../../interface";
 import ActionsSection from "./ActionsSection/ActionsSection";
 import CountersSection from "./CountersSection/CountersSection";
-import "./FeedItem.css";
 import UserDetails from "./UserDetails/UserDetails";
 
 interface FeedItemProps {

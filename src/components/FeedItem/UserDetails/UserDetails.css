@@ -1,0 +1,36 @@
+.user-details-main-section {
+  width: 66.875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.user-details-main-section > img {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-username {
+  color: var(--clr-txt-username);
+  font-weight: var(--fw-secondary);
+  font-size: var(--fs-big);
+}
+
+.details-shop-name {
+  color: var(--clr-txt-shop-name);
+  font-weight: var(--fw-secondary);
+  font-size: var(--fs-primary);
+}
+
+.details-time-elapsed {
+  color: var(--clr-txt-navbar);
+  font-weight: var(--fw-main);
+  font-size: var(--fs-primary);
+}
