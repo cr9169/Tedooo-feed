@@ -1,6 +1,7 @@
 .nav-component-main {
+  width: 23.375rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--clr-item-background);
   padding-inline: 0.5rem;
@@ -8,10 +9,13 @@
 
 .nav-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 0.5rem;
   cursor: pointer;
   position: relative;
+  color: var(--clr-txt-navbar);
+  font: var(--fw-main) var(--fs-big) var(--ff-navbar);
 }
 
 .nav-item span {
@@ -24,7 +28,7 @@
 }
 
 .nav-icon {
-  width: 1.5rem;
+  width: 1.125;
   aspect-ratio: 1;
   filter: invert(65%) sepia(7%) saturate(95%) hue-rotate(314deg) brightness(89%)
     contrast(89%);
