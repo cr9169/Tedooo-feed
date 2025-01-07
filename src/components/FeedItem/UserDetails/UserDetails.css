@@ -10,7 +10,8 @@
 
 .user-details-main-section > img {
   width: 2.5rem;
-  aspect-ratio: 1;
+  height: 2.5rem;
+  object-fit: cover;
   border-radius: 50%;
 }
 
