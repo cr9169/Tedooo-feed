@@ -9,6 +9,7 @@
   /* Text Colors */
   --clr-txt-navbar: hsl(160, 1%, 59%);
   --clr-txt-navbar-chosen: hsl(170, 61%, 45%);
+  --clr-serach-field-background: hsl(180, 5%, 96%);
 
   --clr-txt-username: hsl(163, 8%, 17%);
   --clr-txt-shop-name: hsl(210, 90%, 40%);
