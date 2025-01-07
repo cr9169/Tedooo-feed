@@ -7,7 +7,8 @@
   padding-inline: 1.5rem;
   padding-bottom: 1rem;
   color: var(--clr-txt-like-comment);
-  font: var(--fw-main) var(--fs-primary);
+  font-weight: var(--fw-main);
+  font-size: var(--fs-primary);
   gap: 4rem;
 }
 

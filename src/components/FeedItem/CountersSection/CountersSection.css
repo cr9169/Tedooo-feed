@@ -6,7 +6,8 @@
   justify-content: space-between;
   padding-inline: 1.5rem;
   color: var(--clr-txt-counters);
-  font: var(--fw-main) var(--fs-primary);
+  font-weight: var(--fw-main);
+  font-size: var(--fs-primary);
 }
 
 .likes-amount-section {
