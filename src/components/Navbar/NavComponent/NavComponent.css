@@ -41,7 +41,7 @@
 .active-indicator {
   height: 0.125rem;
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.75rem;
   left: 0;
   right: 0;
   background-color: var(--clr-txt-navbar-chosen);
