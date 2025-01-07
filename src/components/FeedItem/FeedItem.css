@@ -13,7 +13,7 @@
 }
 
 .feed-item-main-section > hr {
-  width: 95%;
+  width: calc(100% - 3rem);
   margin-inline: auto;
 }
 
