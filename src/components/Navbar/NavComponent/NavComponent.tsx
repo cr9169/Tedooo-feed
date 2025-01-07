@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./NavComponent.css";
+import { useState } from "react";
 import homeIcon from "../../../assets/home.svg";
 import messagingIcon from "../../../assets/messaging.svg";
 import notificationsIcon from "../../../assets/notifications.svg";

@@ -7,12 +7,16 @@ import NavComponent from "./NavComponent/NavComponent";
 const Navbar: React.FC = () => {
   return (
     <div className="navbar-main-section">
-      <div>
-        <img src={logo} alt="Tedooo logo" />
-        <SearchField />
+      <div className="navbar-content">
+        <div>
+          <img src={logo} alt="Tedooo logo" />
+          <SearchField />
+        </div>
+        <div>
+          <NavComponent />
+          <img src={avatar} alt="User's avatar" />
+        </div>
       </div>
-      <NavComponent />
-      <img src={avatar} alt="User's avatar" />
     </div>
   );
 };
