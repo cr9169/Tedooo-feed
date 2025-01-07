@@ -11,7 +11,7 @@ const ActionsSection: React.FC = () => {
       </div>
       <div className="comment-action">
         <img src={commentsIcon} alt="Comment icon" />
-        <span>Like</span>
+        <span>Comment</span>
       </div>
     </div>
   );
