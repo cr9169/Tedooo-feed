@@ -1,0 +1,49 @@
+.nav-component-main {
+  width: 23.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  color: var(--clr-txt-navbar);
+  font: var(--fw-main) var(--fs-big) var(--ff-navbar);
+}
+
+.nav-item span {
+  margin-top: 0.25rem;
+  color: var(--clr-txt-navbar);
+}
+
+.nav-item.active span {
+  color: var(--clr-txt-navbar-chosen);
+}
+
+.nav-icon {
+  width: 1.125;
+  aspect-ratio: 1;
+  filter: invert(65%) sepia(7%) saturate(95%) hue-rotate(314deg) brightness(89%)
+    contrast(89%);
+}
+
+.nav-icon.active {
+  filter: invert(68%) sepia(93%) saturate(380%) hue-rotate(116deg)
+    brightness(86%) contrast(84%);
+}
+
+.active-indicator {
+  height: 0.125rem;
+  position: absolute;
+  bottom: -0.75rem;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-txt-navbar-chosen);
+  border-radius: 0.125rem;
+}

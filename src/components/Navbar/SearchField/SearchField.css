@@ -1,0 +1,24 @@
+.search-field-main-section {
+  width: 13.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: var(--clr-serach-field-background);
+  padding: 0.5rem;
+  color: var(--clr-txt-navbar);
+  font: var(--fw-main) var(--fs-primary) var(--ff-main);
+  border-radius: 2rem;
+}
+
+.search-field-main-section img {
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
+.search-field-main-section input {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: transparent;
+}

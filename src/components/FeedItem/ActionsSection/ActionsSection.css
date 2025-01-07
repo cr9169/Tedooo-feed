@@ -1,0 +1,36 @@
+.actions-section-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 1.5rem;
+  padding-bottom: 1rem;
+  color: var(--clr-txt-like-comment);
+  font-weight: var(--fw-main);
+  font-size: var(--fs-primary);
+  gap: 4rem;
+}
+
+.like-action,
+.comment-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.like-action > img,
+.comment-action > img {
+  width: 1.125rem;
+  height: 1.5rem;
+}
+
+.like-action.liked {
+  color: var(--clr-txt-liked);
+}
+
+.like-action.liked > img {
+  filter: invert(27%) sepia(91%) saturate(1935%) hue-rotate(198deg)
+    brightness(98%) contrast(101%);
+}

@@ -1,0 +1,39 @@
+.user-details-main-section {
+  width: 66.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.user-details-main-section > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-username {
+  color: var(--clr-txt-username);
+  font-weight: var(--fw-secondary);
+  font-size: var(--fs-big);
+}
+
+.details-shop-name {
+  color: var(--clr-txt-shop-name);
+  font-weight: var(--fw-secondary);
+  font-size: var(--fs-primary);
+}
+
+.details-time-elapsed {
+  color: var(--clr-txt-navbar);
+  font-weight: var(--fw-main);
+  font-size: var(--fs-primary);
+}
