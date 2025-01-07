@@ -14,6 +14,11 @@ const UserDetails: React.FC<UserDetailsProps> = ({
   avatar,
   date,
 }) => {
+  /**
+   * Formats elapsed time from a given date string to a human-readable format
+   * @param dateString - ISO date string to calculate time from
+   * @returns Formatted string like "5y", "3d", "2h", "30m" or "45s"
+   */
   const formatTimeElapsed = (dateString: string): string => {
     const inputDate = new Date(dateString);
     const currentDate = new Date();

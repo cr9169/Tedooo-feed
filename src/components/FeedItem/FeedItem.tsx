@@ -14,6 +14,10 @@ const FeedItem: React.FC<FeedItemProps> = ({ item }) => {
   const [wasViewed, setWasViewed] = useState(false);
 
   useEffect(() => {
+    /**
+     * Creates IntersectionObserver to track when feed item becomes visible
+     * Sends impression tracking request once when 50% of item is in viewport
+     */
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !wasViewed) {

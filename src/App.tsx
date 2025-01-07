@@ -13,6 +13,10 @@ function App() {
   const [skip, setSkip] = useState(0);
   const LIMIT = 6;
 
+  /**
+   * Fetches feed items with pagination
+   * @throws Error on failed API request
+   */
   const fetchFeedItems = async () => {
     try {
       const response = await axios.get(`/feed?skip=${skip}&limit=${LIMIT}`);
