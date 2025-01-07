@@ -2,7 +2,7 @@
   width: 66.875rem;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  align-items: center;
   gap: 0.5rem;
   padding-inline: 1.5rem;
   padding-top: 1.5rem;
