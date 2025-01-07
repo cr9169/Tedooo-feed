@@ -11,15 +11,16 @@ function App() {
   const [feedItems, setFeedItems] = useState<IFeedItem[]>([]);
   const [hasMore, setHasMore] = useState(true);
   const [skip, setSkip] = useState(0);
+  const LIMIT = 6;
 
   const fetchFeedItems = async () => {
     try {
-      const response = await axios.get(`/feed?skip=${skip}`);
+      const response = await axios.get(`/feed?skip=${skip}&limit=${LIMIT}`);
 
       if (response.data && Array.isArray(response.data.data)) {
         setFeedItems((prev) => [...prev, ...response.data.data]);
         setHasMore(response.data.hasMore);
-        setSkip((prev) => prev + 6);
+        setSkip((prev) => prev + LIMIT);
       }
     } catch (error) {
       console.error("Failed to fetch feed items:", error);
