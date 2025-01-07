@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: var(--ff-main);
+  gap: 1rem;
 }
 
 .feed-item-main-section > hr {
