@@ -19,6 +19,7 @@
 
 .feed-item-main-section > p {
   width: 66.875rem;
+  padding-inline: 1.5rem;
 }
 
 .post-images {
