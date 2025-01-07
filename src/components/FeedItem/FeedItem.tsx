@@ -3,14 +3,44 @@ import IFeedItem from "../../interface";
 import ActionsSection from "./ActionsSection/ActionsSection";
 import CountersSection from "./CountersSection/CountersSection";
 import UserDetails from "./UserDetails/UserDetails";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 interface FeedItemProps {
   item: IFeedItem;
 }
 
 const FeedItem: React.FC<FeedItemProps> = ({ item }) => {
+  const [wasViewed, setWasViewed] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !wasViewed) {
+          setWasViewed(true);
+          axios
+            .get(`/impression?itemId=${item.id}`)
+            .catch((error) =>
+              console.error("Failed to track impression:", error)
+            );
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    const feedItemElement = document.querySelector(
+      `[data-feed-id="${item.id}"]`
+    );
+
+    if (feedItemElement) {
+      observer.observe(feedItemElement);
+    }
+
+    return () => observer.disconnect();
+  }, [item.id, wasViewed]);
+
   return (
-    <div className="feed-item-main-section">
+    <div className="feed-item-main-section" data-feed-id={item.id}>
       <UserDetails
         username={item.username}
         avatar={item.avatar}

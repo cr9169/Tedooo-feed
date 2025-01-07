@@ -10,6 +10,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/feed/, "/feed.json"),
       },
+      "/impression": {
+        target: "https://backend.tedooo.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/impression/, ""),
+      },
     },
   },
 });
