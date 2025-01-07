@@ -25,7 +25,7 @@ const FeedItem: React.FC<FeedItemProps> = ({ item }) => {
       </div>
       <CountersSection likes={item.likes} comments={item.comments} />
       <hr />
-      <ActionsSection />
+      <ActionsSection liked={item.didLike} />
     </div>
   );
 };
