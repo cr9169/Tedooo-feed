@@ -10,6 +10,7 @@
 
 .feed-item-main-section > hr {
   width: 95%;
+  margin-inline: auto;
 }
 
 .feed-item-main-section > p {
